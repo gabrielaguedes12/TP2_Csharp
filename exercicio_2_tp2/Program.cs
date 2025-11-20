@@ -17,7 +17,15 @@ namespace exercicio_02_tp2
               dataNascimento.Day
                 );
 
-           
+            if (proximoAniversario<hoje)
+            {
+                proximoAniversario = proximoAniversario.AddYears(1);
+            }
+
+            TimeSpan diferenca = proximoAniversario - hoje;
+            int diasRestantes = diferenca.Days;
+
+            Console.WriteLine($"\nFaltam {diasRestantes} dias para o seu próximo aniversário!");
         }
     }
 }
