@@ -23,7 +23,9 @@ Organização de código e lógica de programação
 
 Todos os exercícios foram desenvolvidos respeitando as regras da disciplina e com autoria própria.
 
-📦 Estrutura do Trabalho
+📦 Estrutura do Trabalho]
+
+
 🔹 Parte 1 — Manipulação de Datas
 
 Cálculo de Idade Precisa
