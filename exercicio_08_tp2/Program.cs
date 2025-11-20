@@ -4,7 +4,33 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.Write("Digite uma nota de 0 a 10: ");
+            double nota = double.Parse(Console.ReadLine());
+
+            string classificacao;
+
+            if (nota < 0 || nota > 10)
+            {
+                classificacao = "Nota inválida!";
+            }
+            else if (nota < 5)
+            {
+                classificacao = "Insuficiente";
+            }
+            else if (nota < 7)
+            {
+                classificacao = "Regular";
+            }
+            else if (nota < 9)
+            {
+                classificacao = "Bom";
+            }
+            else
+            {
+                classificacao = "Excelente";
+            }
+
+            Console.WriteLine($"\nClassificação: {classificacao}");
         }
     }
 }
